@@ -1,23 +1,3 @@
- /********************************************************************
- * 	Christopher Yates
- *      Thursday, 2:15-5*      
- *      router.c
- *      
- *      Short Description: The file accepts four arguments, which are
- *      	the personal node, the total number of nodes, the 
- *      	costs file, and the machines file. I parsed the two 
- *      	files, and get the machine array and costs table.
- *      	Afterwards, I verified that the pthreads worked. Next,
- *      	I created an everlasting while loop for main that 
- *      	takes two arguments (dest_node and the new cost),
- *      	which then updates the costs table and sends it out
- *      	to the other three nodes. The last thread is always
- *      	calculating the new costs from one node to the other
- *      	three every ten seconds, regardless if the costs 
- *      	table had been updated or not. 
- *
- *******************************************************************/
-
 #include <stdio.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
